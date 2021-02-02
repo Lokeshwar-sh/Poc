@@ -100,7 +100,7 @@ const AddUserContext = (props) => {
                     />
                 </div>
                 <Button type="submit" variant="contained" className={classes.mr_10}>
-                    {props.editableProfile[0] ? 'Edit': 'Submit'}
+                    {props.editableProfile[0] ? 'Save': 'Submit'}
                 </Button>
                 <Button variant="contained" color="secondary" onClick={handleClose}>
                     Cancel

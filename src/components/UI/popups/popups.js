@@ -45,8 +45,9 @@ const ConfirmationPopups = (props) => {
     };
 
     const confirmhandler = () => {
-
-      props.confirmationPopup()
+      let id = props.popup.data
+      props.confirmationPopup(id)
+      props.closePopup()
   };
 
     const body = (
@@ -54,7 +55,7 @@ const ConfirmationPopups = (props) => {
           {props.popup.context}
           <div className={classes.footer}>
             <Button type="button" variant="contained" className={classes.mr_10}  onClick={confirmhandler}>
-                {props.popup.action} {}
+                {props.popup.action} 
             </Button>
             <Button variant="contained" color="secondary" onClick={handleClose}>
                 Cancel
@@ -85,7 +86,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     closePopup: () => dispatch(actionCreator.closePopup()),
-    confirmationPopup: () => dispatch(actionCreator.onRemoveUser())
+    confirmationPopup: (id) => dispatch(actionCreator.onRemoveUser(id))
   }
 }
 
