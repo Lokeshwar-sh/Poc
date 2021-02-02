@@ -1,0 +1,39 @@
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+lable {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer {
+    text-align: right;
+}
+
+.btnSubmit  {
+    padding: 8px 12px;
+    color: #fff;
+    border: 0;
+    background: #62ff62;
+    border-radius: 2px;
+    font-weight: 500;
+    margin: 10px;
+}
+.btnCancel  {
+    padding: 8px 12px;
+    color: #fff;
+    border: 0;
+    background: #ff6775;
+    border-radius: 2px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.mr_10 {
+    margin-right: 10px;
+}
